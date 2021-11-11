@@ -83,6 +83,15 @@
     border: none;
 }
 
+input:focus,
+textarea:focus{
+    outline: none;
+    font-size: 12px;
+    line-height: 15px;
+    color: #3F3F3F;
+
+}
+
 .height{
     height: 36px;
 }
@@ -111,6 +120,8 @@
     text-align: center;
     letter-spacing: -0.02em;
     color: #B4B4B4;
+    margin-bottom: 24px;
+    border: none;
 }
 
 .circle{
@@ -140,6 +151,7 @@
     box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
     border-radius: 4px;
     cursor: url(./cursor.png), pointer;
+    position: relative;
 }
 
 .card__item--foto{
@@ -176,4 +188,15 @@
     font-size: 24px;
     line-height: 30px;
     color: #3F3F3F;
+}
+
+.card__item--card:hover ~ .card__item--delete{
+    background-image: url(./delete.png);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -11px;
+    left: 310px;
 }
